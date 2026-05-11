@@ -29,7 +29,7 @@ pipeline {
             }
         }
         
-        stage('Build Docker Images') {
+        stage('Build Docker Container') {
             steps {
                 sh 'docker run -d -p 3000:3000 --name ci-container ci-node-app07'
             }
